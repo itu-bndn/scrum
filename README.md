@@ -41,6 +41,35 @@ The task board encompasses all the ongoing projects of the team and is managed u
 -   __Done__  
     Once an item is considered done according to the Definition of Done it will be moved to the "Done" stage either by closing or merging the item or manually moving it on the board.
 
+## Development
+
+Development of an implementation of a backlog item is carried out in accordance to [GitHub Flow](https://guides.github.com/introduction/flow/) with some additional requirements and tooling support. One of the primary requirements of the development workflow is the use of [protected branches](https://help.github.com/articles/configuring-protected-branches/) in order to enforce the workflow and ensure the integrity of the main product branches.
+
+### Workflow
+
+1.  __Create a topic branch__  
+    All work is to be carried out on topic branches to ensure isolation. Make sure that the name of your branch describes the work you'll be doing and that it's written in kebab-case (eg. `my-topic-branch`).
+
+2.  __Add commits__  
+    Once your topic branch has been created you can start making the desired changes. Make sure to keep each commit small in order to allow for easy reverts which _can_ and _will_ happen. It's a good idea to use a [GUI client](https://git-scm.com/download/gui/linux) when committing to ease [staging patches](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging#Staging-Patches). Also make sure to familiarize yourself with [the seven rules of a great git commit message](http://chris.beams.io/posts/git-commit/).
+
+3.  __Create a pull request__  
+    When you've committed and pushed some work it's time to create a pull request against the main product branch. Follow the same guidelines for writing pull request titles and descriptions as you would for commit messages and [assign yourself to the issue](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/). If your pull request resolves an existing issue then make sure to state this in either the title or description of the pull request using the [corresponding keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) to associate the pull request with the issue. Once created, your pull request will show up in "In Progress" stage on the task board. Keep in mind that you can continue committing to your branch after the pull request has been created.
+
+4.  __Assign a developer for a code review__  
+    Once satisfied with your work it will need a code review from another developer. Move the pull request (or its associated issue) to the "Review" stage on the task board and [assign to the pull request](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) the developer who will review it.
+
+5.  __Implement feedback from the review__  
+    If the code review finds anything that needs to be changed then implement and commit the changes to your topic branch. This prompts another review so repeat step 4. If nothing is found and the work is approved then proceed to the next step.
+
+6.  __Squash commits__  
+    Now that the code has been finalized it's time to [rebase and squash all the commits](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history) of your topic branch into a single unit of work on top of the main product branch. If you're not entirely comfortable with rebases it's a good idea to get another developer to help you out.
+
+7.  __Assign the product owner for final approval__
+
+8.  __Merge the pull request__  
+    Your pull request is now ready to be merged into the main product branch; well done! :tada:
+
 ## License
 
 [![](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
