@@ -41,6 +41,24 @@ The task board encompasses all the ongoing projects of the team and is managed u
 -   __Done__  
     Once an item is considered done according to the Definition of Done it will be moved to the "Done" stage either by closing or merging the item or manually moving it on the board.
 
+## Estimation
+
+The following Fibonacci point scale is used for estimating the work required for completing a backlog item:
+
+Points  | Meaning
+---:    | :---
+__1__   | Can solve the issue quickly without needing to research
+__2__   | Can solve the issue by researching a little
+__3__   | Can solve the issue by researching a medium amount
+__5__   | Can solve the issue with a little bit of pair programming or a lot of researching
+__8__   | Can solve the issue with a lot of pair programming
+__13__  | Issue is not divisible, but is very hard, i.e. requires group work
+__21__  | Issue can most likely be subdivided
+__34__  | Issue must be subdivided into at least two issues
+__55__  | Large issue, must be subdivided into several issues
+__89__  | User story should most likely be revised as it encompasses a lot of issues)
+__144__ | Ambiguous user story that must be revised as it encompasses too many issues to be divided as-is
+
 ## Development
 
 Development of an implementation of a backlog item is carried out in accordance to [GitHub Flow](https://guides.github.com/introduction/flow/) with some additional requirements and tooling support. One of the primary requirements of the development workflow is the use of [protected branches](https://help.github.com/articles/configuring-protected-branches/) in order to enforce the workflow and ensure the integrity of the main product branches.
