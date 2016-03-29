@@ -70,6 +70,28 @@ Development of an implementation of a backlog item is carried out in accordance 
 8.  __Merge the pull request__  
     Your pull request is now ready to be merged into the main product branch; well done! :tada:
 
+## Reviewing
+
+After finishing an implementation of a backlog item it must go through a [lightweight code review](https://en.wikipedia.org/wiki/Code_review#Types) performed by a developer different from the one who implemented the code. The review process is managed by [PullApprove](https://pullapprove.com/) and its purpose is to improve the quality and correctness of the code. In addition to checking that all automated checks pass, the developer performing the review should ensure that:
+
+-   __The code is tested__  
+    Check that the code is sufficiently tested and that the implemented tests adhere to the specification of the item being implemented.
+
+-   __The code is performant__  
+    Within reason, check that the code doesn't contain any known performance pitfalls. If you know of a better way of doing something then suggest it and ideally back it up with a benchmark.
+
+-   __The code is understandable__  
+    Check that the code uses sufficiently descriptive function and variable names and is commented appropriately. Other developers will need to read the code down the line as well and must be able to understand it.
+
+-   __The code is well-documented__  
+    Check that publically exposed APIs are fully documented as these will be used by other developers who are likely unfamiliar with them. Internal APIs should be sufficiently documented as well.
+
+-   __The code is consistent__  
+    Check that the code fits in with the rest of the codebase and follows the code style conventions laid out by the team. Just like in collaborative writing it shouldn't be possible to tell which developer implemented which code by simply looking at it.
+
+-   __The code minimises duplication__  
+    Check that the code doesn't add unnecessary duplication and instead reuses code where possible and appropriate.
+
 ## License
 
 [![](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
