@@ -56,7 +56,7 @@ __13__  | Issue is not divisible, but is very hard, i.e. requires group work
 __21__  | Issue can most likely be subdivided
 __34__  | Issue must be subdivided into at least two issues
 __55__  | Large issue, must be subdivided into several issues
-__89__  | User story should most likely be revised as it encompasses a lot of issues)
+__89__  | User story should most likely be revised as it encompasses a lot of issues
 __144__ | Ambiguous user story that must be revised as it encompasses too many issues to be divided as-is
 
 ## Development
