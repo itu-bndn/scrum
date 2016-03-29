@@ -52,7 +52,7 @@ __2__   | Can solve the issue by researching a little
 __3__   | Can solve the issue by researching a medium amount
 __5__   | Can solve the issue with a little bit of pair programming or a lot of researching
 __8__   | Can solve the issue with a lot of pair programming
-__13__  | Issue is not divisible, but is very hard, i.e. requires group work
+__13__  | Issue is not divisible, but is very complex, i.e. requires group work
 __21__  | Issue can most likely be subdivided
 __34__  | Issue must be subdivided into at least two issues
 __55__  | Large issue, must be subdivided into several issues
