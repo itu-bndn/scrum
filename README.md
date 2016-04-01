@@ -45,19 +45,18 @@ The task board encompasses all the ongoing projects of the team and is managed u
 
 The following Fibonacci point scale is used for estimating the work required for completing a backlog item:
 
-Points  | Meaning
----:    | :---
-__1__   | Can solve the issue quickly without needing to research
-__2__   | Can solve the issue by researching a little
-__3__   | Can solve the issue by researching a medium amount
-__5__   | Can solve the issue with a little bit of pair programming or a lot of researching
-__8__   | Can solve the issue with a lot of pair programming
-__13__  | Issue is not divisible, but is very complex, i.e. requires group work
-__21__  | Issue can most likely be subdivided
-__34__  | Issue must be subdivided into at least two issues
-__55__  | Large issue, must be subdivided into several issues
-__89__  | User story should most likely be revised as it encompasses a lot of issues
-__144__ | Ambiguous user story that must be revised as it encompasses too many issues to be divided as-is
+Points | Meaning
+---:   | :---
+__1__  | Can solve the issue by researching a little
+__2__  | Can solve the issue by researching a medium amount
+__3__  | Can solve the issue with a little bit of pair programming or a lot of researching
+__5__  | Can solve the issue with a lot of pair programming
+__8__  | Issue is not divisible, but is very complex, i.e. requires group work
+__13__ | Issue can most likely be subdivided
+__21__ | Issue must be subdivided into at least two issues
+__34__ | Large issue, must be subdivided into several issues
+__55__ | User story should most likely be revised as it encompasses a lot of issues
+__89__ | Ambiguous user story that must be revised as it encompasses too many issues to be divided as-is
 
 ## Development
 
