@@ -89,7 +89,7 @@ Development of an implementation of a backlog item is carried out in accordance 
 
 ## Reviewing
 
-After finishing an implementation of a backlog item it must go through a [lightweight code review](https://en.wikipedia.org/wiki/Code_review#Types) performed by a developer different from the one who implemented the code. The review process is managed by [PullApprove](https://pullapprove.com/) and its purpose is to improve the quality and correctness of the code. In addition to checking that all automated checks pass, the developer performing the review should ensure that:
+After finishing an implementation of a backlog item it must go through a [lightweight code review](https://en.wikipedia.org/wiki/Code_review#Types) performed by a developer different from the one who implemented the code. The developer performing the review should ensure that:
 
 -   __The code is tested__  
     Check that the code is sufficiently tested and that the implemented tests adhere to the specification of the item being implemented.
