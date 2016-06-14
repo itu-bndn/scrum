@@ -33,7 +33,7 @@ The task board encompasses all the ongoing projects of the team and is managed u
     Once a developer starts working on an item it will be moved to the "In Progress" stage. It is the responsibility of the developer to update the estimate of the item as they progress their work.
 
 -   __Review__  
-    Once the developer considers an item done it will be moved to the "Review" stage and [assigned a GitHub label](https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/) of either `major`, `minor`, or `patch` according to [Semantic Versioning](http://semver.org/). Another developer will then be chosen and assigned to perform a code review.
+    Once the developer considers an item done it is moved to the "Review" stage and [assigned a GitHub label](https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/) of either `major`, `minor`, or `patch` according to [Semantic Versioning](http://semver.org/). The developer must then unassign themselves from the item. Another developer will then be chosen and assigned to perform a code review. If the item is not approved, it must be re-assigned to the original developer and be sent back to the "In progress" stage.
 
 -   __Accept__  
     Once an item has been approved in the "Review" stage, it will be moved to the "Accept" stage for final approval from the product owner.
@@ -74,7 +74,7 @@ Development of an implementation of a backlog item is carried out in accordance 
     When you've committed and pushed some work it's time to create a pull request against the main product branch. Follow the same guidelines for writing pull request titles and descriptions as you would for commit messages and [assign yourself to the issue](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/). If your pull request resolves an existing issue then make sure to state this in either the title or description of the pull request using the [corresponding keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) to associate the pull request with the issue. Once created, your pull request will show up in "In Progress" stage on the task board. Keep in mind that you can continue committing to your branch after the pull request has been created.
 
 4.  __Assign a developer for a code review__  
-    Once satisfied with your work it will need a code review from another developer. Move the pull request (or its associated issue) to the "Review" stage on the task board and [assign to the pull request](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) the developer who will review it.
+    Once satisfied with your work it will need a code review from another developer. Move the pull request (or its associated issue) to the "Review" stage on the task board and unassign yourself. Once a developer has been chosen for reviewing the pull request then [assign to the pull request](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to them.
 
 5.  __Implement feedback from the review__  
     If the code review finds anything that needs to be changed then implement and commit the changes to your topic branch. This prompts another review so repeat step 4. If nothing is found and the work is approved then proceed to the next step.
